@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/styles.css"> 
+    <title>POWUUM ADÜNA</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">POWUUM ADÜNA<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+</nav>
+<div class="container">
+    <div id="dimensionSelectors">
+        <label for="cols">Rëd yu Taxaaw:</label>
+        <select id="cols">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30" selected>30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+            <option value="80">80</option>
+            <option value="90">90</option>
+            <option value="100">100</option>
+        </select>
+
+        <label for="rows">Rëd yu Teud:</label>
+        <select id="rows">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30" selected>30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+            <option value="80">80</option>
+            <option value="90">90</option>
+            <option value="100">100</option>
+        </select>
+        <label for="speedSelect">Gawaay :</label>
+            <select id="speedSelect">
+            <option value="50">Tres Rapide(20 maas/seconde)</option>
+            <option value="100">Rapide(10 maas/seconde)</option>
+            <option value="200" selected>Moyen(5 maas/seconde)</option>
+            <option value="500">Lent(2 maas/seconde)</option>
+            <option value="1000">Tres Lent(1 maas/seconde)</option>
+        </select>
+    </div>
+
+    <div id="buttonsContainer">
+        <button id="tambali" type="button" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+            </svg>
+            Tambali Poo Mi
+        </button>
+        
+        <button id="jeexal" type="button" class="btn btn-danger">
+            <svg xmlns="http://www.w3.org/2000/svg" widthaliwat="40" height="50" fill="currentColor" class="bi bi-stop" viewBox="0 0 16 16">
+                <path d="M3.5 5A1.5 1.5 0 0 1 5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5zM5 4.5a.5.5 0 0 0-.5.5v6a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5H5z"/>
+              </svg>
+              Jexaal Poo MI</button>
+        <button id="agaleii" type="button" class="btn btn-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="50" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+                <path d="M6 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+              Agaleii Poo Mi</button>
+        <button id="tambaliwat" type="button" class="btn btn-warning">
+                <img src="Icons/reset-svgrepo-com.svg" width="40" height="50" alt="Reset Icon">
+                Tambalii Wat Poo Mi
+            </button>
+            
+        <button id="tanduus" type="button" class="btn btn-primary">
+            <img src="Icons/dice-6-svgrepo-com.svg" width="40" height="50" alt="Random Icon">Tanduus</button>
+
+    </div>
+    <p id="generationCounter">maas : 0</p>
+    <div id="canvasContainer"></div>
+</div>
+<footer class="footer">
+    <div class="container text-center">
+        <p>Just a boy from Tüuba</p>
+        <img src="Icons/Flag_of_Senegal.svg.png" alt="Senegal Image" width="20" height="20">
+    </div>
+</footer>
+    <script src="js/Gol.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
